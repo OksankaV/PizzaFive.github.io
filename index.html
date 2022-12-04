@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Pizza Five</title>
 </head>
@@ -27,7 +29,7 @@
 						</li>
 						<li>
 							<div class="dropdown">
-								<a class="header-menu-item">Меню</a>
+								<a href="#foodmenu" class="header-menu-item">Меню</a>
 								<div class="dropdown-content">
 									<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
 									<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
@@ -40,10 +42,10 @@
 							  
 						</li>
 						<li>
-							<a href="#" class="header-menu-item">Доставка і оплата</a>
+							<a href="#order-and-payment" class="header-menu-item">Доставка і оплата</a>
 						</li>
 						<li>
-							<a href="#" class="header-menu-item">Контакти</a>
+							<a href="#contacts" class="header-menu-item">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -60,7 +62,7 @@
 		</header>
 		<main>
 			<div id="content">
-				<section class="first-view">
+				<section class="first-view" id="firstview">
 					<div class="banner-holder">
 						<div class="arrow-left">
 							<img  src="./images/icon-arrowleft-o.png" alt="left-arrow">
@@ -71,7 +73,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="food-menu">
+				<section class="food-menu" id="foodmenu">
 					<div class="break-line"></div>
 					<div class="layout">
 						<ul>
@@ -127,7 +129,7 @@
 
 					</div>
 				</section>
-				<section class="order-and-payment">
+				<section class="order-and-payment" id="order-and-payment">
 					<h3>Доставка і оплата</h3>
 					<div class="layout">
 						<h4>Доставка піци у будь-який куточок міста</h4>
@@ -147,7 +149,7 @@
 						<img src="./images/banner-main-orderdelivery.png" alt="">
 					</div>	
 				</section>
-				<section class="contacts">
+				<section class="contacts" id="contacts">
 					<h3>Контакти</h3>
 					<div class="layout">
 						<ul>
@@ -193,9 +195,9 @@
 							<img src="./images/img-footer-visa.png" alt="visa">
 						</a>
 					</div>
-
 			</div>
 		</footer>
 	</div>
+
 </body>
 </html>
