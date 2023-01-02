@@ -29,7 +29,7 @@
 						</li>
 						<li>
 							<div class="dropdown">
-								<a class="header-menu-item">Меню</a>
+								<a href="#foodmenu" class="header-menu-item">Меню</a>
 								<div class="dropdown-content">
 									<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
 									<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
@@ -38,14 +38,13 @@
 									<a href="./snack_page_menu.html" class="snack-icon" ><p>Снеки</p></a>
 									<a href="./sauses_page_menu.html" class="sause-icon"><p>Соуси</p></a>
 								</div>
-							</div>
-							  
+							</div>	  
 						</li>
 						<li>
-							<a href="#" class="header-menu-item">Доставка і оплата</a>
+							<a href="#order-and-payment" class="header-menu-item">Доставка і оплата</a>
 						</li>
 						<li>
-							<a href="#" class="header-menu-item">Контакти</a>
+							<a href="#contacts" class="header-menu-item">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -56,8 +55,20 @@
 			</div>
 			<div class="header-shoppingcart-box">
 				<a href="" class="header-shoppingcart">
-						<span class="quantity">(0)</span>
+					<img src="./images/icon-shop-cart.png" alt="">
+					<span class="quantity">(0)</span>
 				</a>
+			</div>
+			<div class="menu-icon-mob dropdown">
+				<a href="" class=""><img src="./images/mob-icon-menu-b.png" alt=""></a>
+				<div class="dropdown-content">
+					<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
+					<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
+					<a href="./pasta_menu_page.html" class="burgers-icon"><p>Бургер сети</p></a>
+					<a href="./drink_page_menu.html" class="drinks-icon"><p>Напої</p></a>
+					<a href="./snack_page_menu.html" class="snack-icon" ><p>Снеки</p></a>
+					<a href="./sauses_page_menu.html" class="sause-icon"><p>Соуси</p></a>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -135,10 +146,28 @@
 			<div class="layout">
 				<div class="text-container">
 					<p>Ми працюємо для Вас з 9 до 20 години</p>
-					<p>Телефон:  +38 (095) 343 86 57; +38 (068) 092 06 49</p>
+					<p class="display-tel-in-row">Телефон:  +38 (095) 343 86 57; +38 (068) 092 06 49</p>
+					<div class="display-tel-in-2row">
+						<div class="flex-row">
+							<span>Телефон:</span>
+							<span>+38 (095) 343 86 57</span>
+						</div>
+						<div class="flex-row">
+								<a href="https://www.instagram.com/" class="social-icons" target="_blank">
+									<img src="./images/icon-instagram-g.png" alt="instagram">
+								</a>
+								<a href="https://www.facebook.com/" class="social-icons" target="_blank">
+									<img src="./images/icon-facebook-g.png" alt="facebook">
+								</a>
+								<a href="https://telegram.org/" class="social-icons" target="_blank">
+									<img src="./images/icon-telegram-g.png" alt="telegram">
+								</a>
+							<span>+38 (068) 092 06 49</span>
+						</div>						
+					</div>
 				</div>
-
-					<div class="icons-container">	
+				<div class="icons-container">	
+					<div class="social-icons-container">	
 						<a href="https://www.instagram.com/" class="social-icons" target="_blank">
 							<img src="./images/icon-instagram-g.png" alt="instagram">
 						</a>
@@ -148,7 +177,8 @@
 						<a href="https://telegram.org/" class="social-icons" target="_blank">
 							<img src="./images/icon-telegram-g.png" alt="telegram">
 						</a>
-
+					</div>	
+					<div class="payment-icons-container">
 						<a href="https://pay.google.com/" class="google-icon" target="_blank">
 							<img  src="./images/img-footer-googlepay.png" alt="googlepay">
 						</a>
@@ -159,7 +189,7 @@
 							<img src="./images/img-footer-visa.png" alt="visa">
 						</a>
 					</div>
-
+				</div>	
 			</div>
 		</footer>
 	</div>
