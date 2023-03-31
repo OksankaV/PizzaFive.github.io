@@ -8,7 +8,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js//jquery-3.6.3.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script defer type="module" src="js/main.js"></script>
+	<script defer type="module" src="js/data.js"></script>
 	<title>Pizza Menu</title>
 </head>
 <body>
@@ -29,7 +32,7 @@
 						</li>
 						<li>
 							<div class="dropdown">
-								<a href="#foodmenu" class="header-menu-item">Меню</a>
+								<a href="./index.html#foodmenu" class="header-menu-item">Меню</a>
 								<div class="dropdown-content">
 									<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
 									<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
@@ -41,10 +44,10 @@
 							</div>	  
 						</li>
 						<li>
-							<a href="#order-and-payment" class="header-menu-item">Доставка і оплата</a>
+							<a href="./index.html#order-and-payment" class="header-menu-item">Доставка і оплата</a>
 						</li>
 						<li>
-							<a href="#contacts" class="header-menu-item">Контакти</a>
+							<a href="./index.html#contacts" class="header-menu-item">Контакти</a>
 						</li>
 					</ul>
 				</nav>
@@ -73,97 +76,10 @@
 		</header>
 		<main>
 			<div id="content">
-				<section class="page-menu-list pizza-section-padding">
+				<section class="page-menu-list pizza-section-padding" data-menu="pizza">
                     <div class="layout">
                         <ul>
-                            <li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzamargarita.png" alt="margarita">
-									<div class="name-and-price">
-										<h4>Маргарита</h4>
-										<span>470г / 90 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, помідори, орегано)</p>
-									<a class="order-button" href="#">Замовити</a>   
-								</div> 
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzaneapolitano.png" alt="neapolitano">
-									<div class="name-and-price">
-										<h4>Неаполітано</h4>
-										<span>570г / 150 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, помідор, печериці, куряче філе, шинка, маслини, орегано)</p>
-									<a class="order-button" href="">Замовити</a>    
-								</div>
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzapalermo.png" alt="palermo">
-									<div class="name-and-price">
-										<h4>Палєрмо</h4>
-										<span>560г / 125 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус вершковий, моцарелла, помідор, печериці, бекон, шинка, орегано)</p>
-									<a class="order-button" href="">Замовити</a>   
-								</div>
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzapaperoni.png" alt="paperoni">
-									<div class="name-and-price">
-										<h4>Пеппероні</h4>
-										<span>480г / 100 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, пеппероні, чілі, орегано)</p>
-									<a class="order-button" href="">Замовити</a>  
-								</div>  
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzavitelo.png" alt="vitelo">
-									<div class="name-and-price">
-										<h4>Вітелло</h4>
-										<span>590г / 130 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, помідор, яловичина, болгарський перець, Дор Блю, орегано)</p>
-									<a class="order-button" href="">Замовити</a>  
-								</div>  
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizza4formadgi.png" alt="4formadgi">
-									<div class="name-and-price">
-										<h4>Квадро Формаджі</h4>
-										<span>560г / 140 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус вершковий, моцарелла, гауда, Дор Блю, гарана падана, груша, орегано)</p>
-									<a class="order-button" href="">Замовити</a>   
-								</div> 
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzabavarska.png" alt="bavarska">
-									<div class="name-and-price">
-										<h4>Баварська</h4>
-										<span>550г / 110 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, помідор, колбаски, корнішони, цибуля маринована, орегано)</p>
-									<a class="order-button" href="">Замовити</a> 
-								</div>   
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-pizzamafia.png" alt="mafia">
-									<div class="name-and-price">
-										<h4>Мафія</h4>
-										<span>600г / 130 грн.</span>
-									</div>
-									<p class="descripton-height-pizza">(соус неаполітано, моцарелла, помідор, яловичина, куряче філе, шинка, цибуля маринована, орегано)</p>
-									<a class="order-button" href="">Замовити</a> 
-								</div>   
-                            </li>
+                         
                         </ul>
                     </div>
 				</section>
@@ -219,5 +135,96 @@
 				</div>	
 			</div>
 		</footer>
+		<section class="modal-window-menu modal-pizza hidden">
+			<div class="order-item-flex-container">
+				<img class="itemImageModal" src="" alt="">
+				<div class="name-and-price">
+					<h4 class="itemNameModal"></h4>
+					<span class="itemPriceModal"></span>
+				</div>
+				<p class="descripton-height-pizza itemDescriptionModal"></p>
+				<div class="quantity-changer-row">
+					<h4>Кількість</h4>
+					<div class="quantity-changer-box">
+						<a class="quantity-changer-minus" href="#"></a>
+						<span class="count-span-item"></span>
+						<a class="quantity-changer-plus" href="#"></a>
+						<input type="text" id="itemQuantity" name="pizzaQuantity" value="" hidden>
+					</div>
+				</div>    
+			</div>
+			<a href="" class="close-button"></a>
+			<div class="order-item-flex-container2">
+				<div class="quantity-changer-row">
+					<h4>Сирний борт</h4>
+					<div class="quantity-changer-box">
+						<a class="quantity-changer-minus" href="#"></a>
+						<span id="cheese-border" class="count-span"></span>
+						<a class="quantity-changer-plus" href="#"></a>
+						<input type="text" id="borderQuantity" name="borderQuantity" value="" hidden>
+					</div>
+				</div>	
+				<h4 class="add-to-pizza">Додати в піцу</h4>
+				<div class="pizza-add-ons add-ons">
+					<ul>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addmozzarella.png" alt="">
+								<p>Моцарелла</p>
+								<input type="checkbox" id="mocarella" name="mocarella" value="Моцарелла" hidden>
+							</div>
+						</li>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addcheese.png" alt="">
+								<p>Пармезан</p>
+								<input type="checkbox" id="parmezan" name="parmezan" value="Пармезан" hidden>
+							</div>
+						</li>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addchickenbreast.png" alt="">
+								<p>Куряче філе</p>
+								<input type="checkbox" id="chickenbreast" name="chickenbreast" value="Куряче філе" hidden>
+							</div>
+						</li>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addtomato.png" alt="">
+								<p>Помідори</p>
+								<input type="checkbox" id="tomatoes" name="tomatoes" value="Помідори" hidden>
+							</div>
+						</li>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addmushrooms.png" alt="">
+								<p>Печериці</p>
+								<input type="checkbox" id="mushrooms" name="mushrooms" value="Печериці" hidden>
+							</div>
+						</li>
+						<li>
+							<div class="add-on-container">
+								<img src="./images/icon-addonion.png" alt="">
+								<p>Цибуля</p>
+								<input type="checkbox" id="onions" name="onions" value="Цибуля" hidden>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="ingridients-count">Інгредієнти: (<span class="count-span"></span>)</div>
+			</div>
+			<div class="add-to-shopping-cart">
+				<button>
+					Додати до кошика (<span class="count-span"></span> грн.)
+				</button>
+			</div> 
+		</section>
+		<div class="overlay hidden"></div>	
+		<section class="modal-shopping-cart hidden">
+			<a href="" class="close-button"></a>
+			<div class="main-flex-container-sc">
+
+			</div>
+		</section>	
 </body>
 </html>

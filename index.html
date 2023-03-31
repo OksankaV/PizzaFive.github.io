@@ -5,10 +5,16 @@
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link rel="stylesheet" href="css/slick.css" type="text/css"/>
+	<link rel="stylesheet" href="css/slick_changes.css" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js//jquery-3.6.3.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script defer type="module" src="js/main.js"></script>
+	<script defer type="module" src="js/data.js"></script>
+
 	<title>Pizza Five</title>
 </head>
 <body>
@@ -54,7 +60,7 @@
 				</div>
 			</div>
 			<div class="header-shoppingcart-box">
-				<a href="" class="header-shoppingcart">
+				<a href="#" class="header-shoppingcart">
 					<img src="./images/icon-shop-cart.png" alt="">
 					<span class="quantity">(0)</span>
 				</a>
@@ -74,7 +80,7 @@
 		<main>
 			<div id="content">
 				<section class="first-view" id="firstview">
-					<div class="banner-holder">
+					<!--<div class="banner-holder">
 						<div class="arrow-left">
 							<img  src="./images/icon-arrowleft-o.png" alt="left-arrow">
 						</div>
@@ -83,6 +89,24 @@
 							<img  src="./images/icon-arrowright-o.png" alt="right-arrow">
 						</div>
 					</div>
+				-->
+				<ul class="slick-slider">
+					<li>
+						<div class="layout">
+							<img class="banner" src="./images/banner-main-womanincap.png" alt="banner-girl">
+						</div>
+					</li>
+					<li>
+						<div class="layout">
+							<img class="banner" src="./images/banner-bg-main.png" alt="banner-pizza">
+						</div>
+					</li>
+					<li>
+						<div class="layout">
+							<img class="banner change-banner-width" src="./images/banner-main-free-delivery.png" alt="banner-pizza2">
+						</div>
+					</li>
+				</ul>
 				</section>
 				<section class="food-menu" id="foodmenu">
 					<div class="break-line"></div>
@@ -238,6 +262,74 @@
 			</div>
 		</footer>
 	</div>
+
+<div class="overlay hidden"></div>	
+<section class="modal-shopping-cart hidden">
+	<a href="" class="close-button"></a>
+	<div class="main-flex-container-sc">
+		<div class="item-flex-container-sc" >
+			<img src="./images/img-pizzapaperoni.png" alt="">
+			<div class="description-flex-container-sc" >
+				<p>Піцца “Пеппероні”</p>
+				<p>480 / 100 грн.</p>
+				<p>Додаткові інгредієнти: <span>0</span></p>
+				<div class="quantity-changer-box">
+					<a class="quantity-changer-minus" href=""></a>
+					<span>0</span>
+					<a class="quantity-changer-plus" href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="item-flex-container-sc" >
+			<img src="./images/img-pastafungi.png" alt="">
+			<div class="description-flex-container-sc" >
+				<p>Паста “Фунгі”</p>
+				<p>320 / 80 грн.</p>
+				<p>Додаткові інгредієнти: <span>0</span></p>
+				<div class="quantity-changer-box">
+					<a class="quantity-changer-minus" href=""></a>
+					<span>0</span>
+					<a class="quantity-changer-plus" href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="item-flex-container-sc" >
+			<img src="./images/img-snackscheesecrokets.png" alt="">
+			<div class="description-flex-container-sc" >
+				<p>Сирні крокети</p>
+				<p>200 / 35 / 120 грн.</p>
+				<p>Додаткові інгредієнти: <span>0</span></p>
+				<div class="quantity-changer-box">
+					<a class="quantity-changer-minus" href=""></a>
+					<span>0</span>
+					<a class="quantity-changer-plus" href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="item-flex-container-sc" >
+			<img src="./images/img-chickenburgerset.png" alt="">
+			<div class="description-flex-container-sc" >
+				<p>Чікен Бургер Сет</p>
+				<p>350 /150 / 35 / 110 грн.</p>
+				<p>Додаткові інгредієнти: <span>0</span></p>
+				<div class="quantity-changer-box">
+					<a class="quantity-changer-minus" href=""></a>
+					<span>0</span>
+					<a class="quantity-changer-plus" href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="total-sc">
+			<p>Доставка 50 грн.</p>
+			<p>Всього: 610 грн</p>
+		</div>
+		<div class="make-order-button">
+			<button>
+				Оформити замовлення
+			</button>
+		</div>
+	</div>
+</section>
 
 </body>
 </html>

@@ -1,176 +1,300 @@
-<!doctype html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width; initial-scale=1" />
-	<link rel="stylesheet" href="css/all.css" type="text/css"/>
-	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap" rel="stylesheet">
-	<script type="text/javascript" src="js/main.js"></script>
-	<title>Snacks Menu</title>
-</head>
-<body>
-	<div id="wrapper">
-		<header>
-			<div class="header-color"></div>
-			<div class="logo">
-				<a href="./index.html">
-					<img src="./images/img-logo.png" alt="logo">
-				</a>
-				<h1>Pizza Five</h1>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="js//jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script defer type="module" src="js/main.js"></script>
+    <script defer type="module" src="js/data.js"></script>
+    <title>Snacks Menu</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="header-color"></div>
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/img-logo.png" alt="logo" />
+          </a>
+          <h1>Pizza Five</h1>
+        </div>
+        <div class="header-menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="./index.html" class="header-menu-item">Головна</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="./index.html#foodmenu" class="header-menu-item"
+                    >Меню</a
+                  >
+                  <div class="dropdown-content">
+                    <a href="./pizza_menu_page.html" class="pizza-icon"
+                      ><p>Піцца</p></a
+                    >
+                    <a href="./pasta_menu_page.html" class="pasta-icon"
+                      ><p>Паста</p></a
+                    >
+                    <a href="./pasta_menu_page.html" class="burgers-icon"
+                      ><p>Бургер сети</p></a
+                    >
+                    <a href="./drink_page_menu.html" class="drinks-icon"
+                      ><p>Напої</p></a
+                    >
+                    <a href="./snack_page_menu.html" class="snack-icon"
+                      ><p>Снеки</p></a
+                    >
+                    <a href="./sauses_page_menu.html" class="sause-icon"
+                      ><p>Соуси</p></a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="./index.html#order-and-payment"
+                  class="header-menu-item"
+                  >Доставка і оплата</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#contacts" class="header-menu-item"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header-menu-bottom">
+            <p>
+              Ми працюємо для Вас з <span>9</span> до <span>20</span> години
+            </p>
+            <p>
+              Телефон: <span>+38 (095) 343 86 57; +38 (068) 092 06 49</span>
+            </p>
+          </div>
+        </div>
+        <div class="header-shoppingcart-box">
+          <a href="" class="header-shoppingcart">
+            <img src="./images/icon-shop-cart.png" alt="" />
+            <span class="quantity">(0)</span>
+          </a>
+        </div>
+        <div class="menu-icon-mob dropdown">
+          <a href="" class=""
+            ><img src="./images/mob-icon-menu-b.png" alt=""
+          /></a>
+          <div class="dropdown-content">
+            <a href="./pizza_menu_page.html" class="pizza-icon"><p>Піцца</p></a>
+            <a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
+            <a href="./pasta_menu_page.html" class="burgers-icon"
+              ><p>Бургер сети</p></a
+            >
+            <a href="./drink_page_menu.html" class="drinks-icon"
+              ><p>Напої</p></a
+            >
+            <a href="./snack_page_menu.html" class="snack-icon"><p>Снеки</p></a>
+            <a href="./sauses_page_menu.html" class="sause-icon"
+              ><p>Соуси</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="content">
+          <section
+            class="page-menu-list snack-section-padding"
+            data-menu="snack"
+          >
+            <div class="layout">
+              <ul></ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="layout">
+          <div class="text-container">
+            <p>Ми працюємо для Вас з 9 до 20 години</p>
+            <p class="display-tel-in-row">
+              Телефон: +38 (095) 343 86 57; +38 (068) 092 06 49
+            </p>
+            <div class="display-tel-in-2row">
+              <div class="flex-row">
+                <span>Телефон:</span>
+                <span>+38 (095) 343 86 57</span>
+              </div>
+              <div class="flex-row">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-icons"
+                  target="_blank"
+                >
+                  <img src="./images/icon-instagram-g.png" alt="instagram" />
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-icons"
+                  target="_blank"
+                >
+                  <img src="./images/icon-facebook-g.png" alt="facebook" />
+                </a>
+                <a
+                  href="https://telegram.org/"
+                  class="social-icons"
+                  target="_blank"
+                >
+                  <img src="./images/icon-telegram-g.png" alt="telegram" />
+                </a>
+                <span>+38 (068) 092 06 49</span>
+              </div>
+            </div>
+          </div>
+          <div class="icons-container">
+            <div class="social-icons-container">
+              <a
+                href="https://www.instagram.com/"
+                class="social-icons"
+                target="_blank"
+              >
+                <img src="./images/icon-instagram-g.png" alt="instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                class="social-icons"
+                target="_blank"
+              >
+                <img src="./images/icon-facebook-g.png" alt="facebook" />
+              </a>
+              <a
+                href="https://telegram.org/"
+                class="social-icons"
+                target="_blank"
+              >
+                <img src="./images/icon-telegram-g.png" alt="telegram" />
+              </a>
+            </div>
+            <div class="payment-icons-container">
+              <a
+                href="https://pay.google.com/"
+                class="google-icon"
+                target="_blank"
+              >
+                <img src="./images/img-footer-googlepay.png" alt="googlepay" />
+              </a>
+              <a
+                href="https://www.mastercard.com/"
+                class="mc-icon"
+                target="_blank"
+              >
+                <img
+                  src="./images/img-footer-mastercard.png"
+                  alt="mastercard"
+                />
+              </a>
+              <a href="https://www.visa.com/" class="visa-icon" target="_blank">
+                <img src="./images/img-footer-visa.png" alt="visa" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <section class="modal-window-menu modal-snack hidden">
+      <div class="order-item-flex-container snack-modal-mob">
+        <img class="itemImageModal" src="" alt="" />
+        <div class="name-and-price">
+          <h4 class="itemNameModal"></h4>
+          <span class="itemPriceModal"></span>
+        </div>
+        <div class="quantity-changer-row">
+          <h4>Кількість</h4>
+          <div class="quantity-changer-box">
+            <a class="quantity-changer-minus" href="#"></a>
+            <span class="count-span-item"></span>
+            <a class="quantity-changer-plus" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="close-button"></a>
+      <div class="order-item-flex-container2 snack-modal-mob2">
+        <h4 class="add-to-pizza">Вибрати соус</h4>
+        <div class="snack-add-ons add-ons">
+          <ul>
+            <li>
+              <div class="add-on-container">
+                <img src="./images/img-sausegarlic.png" alt="" />
+                <label for="sausegarlic">Часниковий</label>
+                <input
+                  type="checkbox"
+                  id="sausegarlic"
+                  name="sausegarlic"
+                  value="Часниковий"
+                  hidden
+                />
+              </div>
+            </li>
+            <li>
+              <div class="add-on-container">
+                <img src="./images/img-sausesouresweet.png" alt="" />
+                <label for="sausesouresweet">Кисло - солодкий</label>
+                <input
+                  type="checkbox"
+                  id="sausesouresweet"
+                  name="sausesouresweet"
+                  value="Кисло - солодкий"
+                  hidden
+                />
+              </div>
+            </li>
+            <li>
+              <div class="add-on-container">
+                <img src="./images/img-sausetomato.png" alt="" />
+                <label for="sausetomato">Томатний</label>
+                <input
+                  type="checkbox"
+                  id="sausetomato"
+                  name="sausetomato"
+                  value="Томатний"
+                  hidden
+                />
+              </div>
+            </li>
+            <li>
+              <div class="add-on-container">
+                <img src="./images/img-sausecranbery.png" alt="" />
+                <label for="sausecranbery">Журавлиний</label>
+                <input
+                  type="checkbox"
+                  id="sausecranbery"
+                  name="sausecranbery"
+                  value="Журавлиний"
+                  hidden
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="ingridients-count">Інгредієнти: (<span class="count-span"></span>)</div>
+      </div>
+      <div class="add-to-shopping-cart">
+        <button>Додати до кошика (<span class="count-span"></span> грн.)</button>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <section class="modal-shopping-cart hidden">
+			<a href="" class="close-button"></a>
+			<div class="main-flex-container-sc">
 			</div>
-			<div class="header-menu">
-				<nav>
-					<ul>
-						<li>
-							<a href="./index.html" class="header-menu-item">Головна</a>
-						</li>
-						<li>
-							<div class="dropdown">
-								<a href="#foodmenu" class="header-menu-item">Меню</a>
-								<div class="dropdown-content">
-									<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
-									<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
-									<a href="./pasta_menu_page.html" class="burgers-icon"><p>Бургер сети</p></a>
-									<a href="./drink_page_menu.html" class="drinks-icon"><p>Напої</p></a>
-									<a href="./snack_page_menu.html" class="snack-icon" ><p>Снеки</p></a>
-									<a href="./sauses_page_menu.html" class="sause-icon"><p>Соуси</p></a>
-								</div>
-							</div>	  
-						</li>
-						<li>
-							<a href="#order-and-payment" class="header-menu-item">Доставка і оплата</a>
-						</li>
-						<li>
-							<a href="#contacts" class="header-menu-item">Контакти</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header-menu-bottom">
-					<p>Ми працюємо для Вас з <span>9</span> до <span>20</span> години </p>
-					<p>Телефон: <span>+38 (095) 343 86 57;  +38 (068) 092 06 49</span></p>
-				</div>
-			</div>
-			<div class="header-shoppingcart-box">
-				<a href="" class="header-shoppingcart">
-					<img src="./images/icon-shop-cart.png" alt="">
-					<span class="quantity">(0)</span>
-				</a>
-			</div>
-			<div class="menu-icon-mob dropdown">
-				<a href="" class=""><img src="./images/mob-icon-menu-b.png" alt=""></a>
-				<div class="dropdown-content">
-					<a href="./pizza_menu_page.html" class="pizza-icon" ><p>Піцца</p></a>
-					<a href="./pasta_menu_page.html" class="pasta-icon"><p>Паста</p></a>
-					<a href="./pasta_menu_page.html" class="burgers-icon"><p>Бургер сети</p></a>
-					<a href="./drink_page_menu.html" class="drinks-icon"><p>Напої</p></a>
-					<a href="./snack_page_menu.html" class="snack-icon" ><p>Снеки</p></a>
-					<a href="./sauses_page_menu.html" class="sause-icon"><p>Соуси</p></a>
-				</div>
-			</div>
-		</header>
-		<main>
-			<div id="content">
-				<section class="page-menu-list snack-section-padding">
-                    <div class="layout">
-                        <ul>
-                            <li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-snacksfriedpotatoes.png" alt="friedpotatoes">
-									<div class="name-and-price">
-										<h4>Картопля фрі</h4>
-										<span>200г / 35/ 60 грн.</span>
-									</div>
-									<a class="order-button" href="">Замовити</a>    
-								</div>
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-snackscheesecrokets.png" alt="cheesecrokets">
-									<div class="name-and-price">
-										<h4>Сирні крокети</h4>
-										<span>200г / 35 / 80 грн.</span>
-									</div>
-									<a class="order-button" href="">Замовити</a>  
-								</div>  
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-snacksnagets.png" alt="nagets">
-									<div class="name-and-price">
-										<h4>Нагетси</h4>
-										<span>150г / 35 / 70 грн.</span>
-									</div>
-									<a class="order-button" href="">Замовити</a>   
-								</div> 
-                            </li>
-							<li>
-								<div class="menu-item-flex-container">
-									<img src="./images/img-snacksonionrings.png" alt="onionrings">
-									<div class="name-and-price">
-										<h4>Цибулеві кільця</h4>
-										<span>150г / 35 / 90 грн.</span>
-									</div>
-									<a class="order-button" href="">Замовити</a>  
-								</div>  
-                            </li>
-                        </ul>
-                    </div>
-				</section>
-			</div>
-		</main>
-		<footer>
-			<div class="layout">
-				<div class="text-container">
-					<p>Ми працюємо для Вас з 9 до 20 години</p>
-					<p class="display-tel-in-row">Телефон:  +38 (095) 343 86 57; +38 (068) 092 06 49</p>
-					<div class="display-tel-in-2row">
-						<div class="flex-row">
-							<span>Телефон:</span>
-							<span>+38 (095) 343 86 57</span>
-						</div>
-						<div class="flex-row">
-								<a href="https://www.instagram.com/" class="social-icons" target="_blank">
-									<img src="./images/icon-instagram-g.png" alt="instagram">
-								</a>
-								<a href="https://www.facebook.com/" class="social-icons" target="_blank">
-									<img src="./images/icon-facebook-g.png" alt="facebook">
-								</a>
-								<a href="https://telegram.org/" class="social-icons" target="_blank">
-									<img src="./images/icon-telegram-g.png" alt="telegram">
-								</a>
-							<span>+38 (068) 092 06 49</span>
-						</div>						
-					</div>
-				</div>
-				<div class="icons-container">	
-					<div class="social-icons-container">	
-						<a href="https://www.instagram.com/" class="social-icons" target="_blank">
-							<img src="./images/icon-instagram-g.png" alt="instagram">
-						</a>
-						<a href="https://www.facebook.com/" class="social-icons" target="_blank">
-							<img src="./images/icon-facebook-g.png" alt="facebook">
-						</a>
-						<a href="https://telegram.org/" class="social-icons" target="_blank">
-							<img src="./images/icon-telegram-g.png" alt="telegram">
-						</a>
-					</div>	
-					<div class="payment-icons-container">
-						<a href="https://pay.google.com/" class="google-icon" target="_blank">
-							<img  src="./images/img-footer-googlepay.png" alt="googlepay">
-						</a>
-						<a href="https://www.mastercard.com/" class="mc-icon" target="_blank">
-							<img  src="./images/img-footer-mastercard.png" alt="mastercard">
-						</a>
-						<a href="https://www.visa.com/" class="visa-icon" target="_blank">
-							<img src="./images/img-footer-visa.png" alt="visa">
-						</a>
-					</div>
-				</div>	
-			</div>
-		</footer>
-	</div>
-</body>
+		</section>	
+  </body>
 </html>
