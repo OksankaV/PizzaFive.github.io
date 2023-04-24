@@ -1,4 +1,4 @@
-export const products = {
+const products = {
   pizza: [
     {
       id: "margarita",
@@ -117,13 +117,13 @@ export const products = {
       image: "./images/img-chickenburgerset.png",
     },
   ],
-  drinks: [
+  drink: [
     {
       id: "lemonade",
       name: "Лимонад",
       volume: [0.5, 1, 2],
       price: [25, 45, 65],
-      volumePrice: {0.5: 25, 1:45, 2:65},
+      volumePrice: { 0.5: 25, 1: 45, 2: 65 },
       image: "./images/img-drinkslemonade.png",
     },
     {
@@ -131,7 +131,7 @@ export const products = {
       name: "Вишневий сік",
       volume: [0.5, 1, 2],
       price: [30, 50, 70],
-      volumePrice: {0.5: 25, 1:45, 2:65},
+      volumePrice: { 0.5: 25, 1: 45, 2: 65 },
       image: "./images/img-drinkscherryjuice.png",
     },
     {
@@ -139,7 +139,7 @@ export const products = {
       name: "Вода",
       volume: [0.5, 1, 2],
       price: [5, 15, 25],
-      volumePrice: {0.5: 25, 1:45, 2:65},
+      volumePrice: { 0.5: 25, 1: 45, 2: 65 },
       image: "./images/img-drinkswater.png",
     },
     {
@@ -147,7 +147,7 @@ export const products = {
       name: "Pepsi",
       volume: [0.5, 1, 2],
       price: [30, 60, 90],
-      volumePrice: {0.5: 25, 1:45, 2:65},
+      volumePrice: { 0.5: 25, 1: 45, 2: 65 },
       image: "./images/img-drinkspepsi.png",
     },
   ],
@@ -198,8 +198,7 @@ export const products = {
     {
       id: "souresweet",
       name: "Кисло - солодкий соус",
-      description:
-        "соус густий, солодкий з кислинкою",
+      description: "соус густий, солодкий з кислинкою",
       weight: 35,
       price: 20,
       image: "./images/img-sausesouresweet.png",
@@ -222,3 +221,5 @@ export const products = {
     },
   ],
 };
+
+localStorage.setItem("data", JSON.stringify(products));

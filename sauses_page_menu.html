@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="js//jquery-3.6.3.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script defer type="module" src="js/main.js"></script>
-	<script defer type="module" src="js/data.js"></script>
 	<title>Sauses Menu</title>
 </head>
 <body>
@@ -164,6 +163,81 @@
 		<a href="" class="close-button"></a>
 		<div class="main-flex-container-sc">
 		</div>
+	</section>	
+	<section class="modal-order-form hidden">
+		<a href="" class="close-button"></a>
+		<div class="order-form">
+			<legend>Дані для замовлення</legend>
+			<span id="empty-error" class="hidden">*  Поля обов'язкові до заповнення</span>
+			<span id="correct-error" class="hidden"></span>
+			<div class="form-row name-and-tel-mob">
+				<input id="input-name" type="text" name="your-name" placeholder="Ім’я">
+				<span class="required-input-mark hidden" >*</span>
+				<input id="input-tel" type="tel" name="telephone" placeholder="Тел. +380(..).......">
+				<span class="required-input-mark hidden" >*</span>
+			</div>
+			<div class="form-row">
+				<input id="input-address" type="text" name="address" placeholder="Вул.">
+				<span class="required-input-mark hidden" >*</span>
+			</div>
+			<div class="form-row">
+				<input id="input-building" type="text" name="building" placeholder="Буд.">
+				<span class="required-input-mark hidden" >*</span>
+				<input id="input-apt" type="text" name="appartment" placeholder="Кв.">
+				<input id="input-enterance" type="text" name="enterance" placeholder="Під’їзд">
+				<input id="input-floor" type="text" name="floor" placeholder="Поверх">
+			</div>
+			<div class="form-row">
+				<input id="input-set-quanity" type="text" name="set-quanity" placeholder="Кількість приборів">
+			</div>
+			<div class="form-row">
+				<textarea name="comment" id="input-comment" cols="30" rows="10" placeholder="Коментар"></textarea>
+			</div>
+			<div class="payment-box">
+				<p>Оберіть спосіб оплати</p>
+				<div class="form-row">
+					<input id="payment-button-cash" name="payment-radio" value="0"  type="radio">
+					<label class="payment-button" for="payment-button-cash">Готівкою</label>
+	
+					<input id="payment-button-terminal" name="payment-radio" value="1"  type="radio">
+					<label class="payment-button" for="payment-button-terminal">Термінал</label>
+	
+					<input id="payment-button-online" name="payment-radio" value="2"  type="radio">
+					<label class="payment-button" for="payment-button-online">On-line оплата</label>
+	
+				</div>
+			</div>
+			<div id="result-payment-0"  class="result-payment-box hidden">
+				<input type="text" placeholder="Залишок з якої суми">
+			</div>
+			<div id="result-payment-1"  class="result-payment-box hidden">
+				<a class="payment-button"  href="#">Термінал</a>
+				<div class="payment-icons-row">
+					<a href="https://www.mastercard.com/" class="mc-icon" target="_blank">
+						<img  src="./images/img-form-mastercard.png" alt="mastercard">
+					</a>
+					<a href="https://www.visa.com/" class="visa-icon" target="_blank">
+						<img src="./images/img-footer-visa.png" alt="visa">
+					</a>
+				</div>
+			</div>
+			<div id="result-payment-2"  class="result-payment-box hidden">
+				<a class="payment-button"  href="#">On-line оплата</a>
+				<div class="payment-icons-row">
+					<a href="https://pay.google.com/" class="google-icon" target="_blank">
+						<img  src="./images/img-footer-googlepay.png" alt="googlepay">
+					</a>
+					<a href="https://www.mastercard.com/" class="mc-icon" target="_blank">
+						<img  src="./images/img-form-mastercard.png" alt="mastercard">
+					</a>
+					<a href="https://www.visa.com/" class="visa-icon" target="_blank">
+						<img src="./images/img-footer-visa.png" alt="visa">
+					</a>
+				</div>
+			</div>
+			<input id="order-form-submit" type="submit" value="Підтвердити замовлення">
+		</div>
+		
 	</section>	
 </body>
 </html>

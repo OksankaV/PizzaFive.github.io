@@ -1356,12 +1356,13 @@ footer .payment-icons-container .visa-icon img {
   background: #f3ddd4;
   border-radius: 20px;
   padding: 24px 35px 10px 48px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   margin: 20px auto 0 auto;
   z-index: 4;
+  max-height: 98vh;
   overflow-y: scroll;
 }
 .burger-modal-description {
@@ -1560,6 +1561,7 @@ footer .payment-icons-container .visa-icon img {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  gap: 10px;
   width: 572px;
   height: 706px;
   margin: 24px 0 0 0;
@@ -1571,6 +1573,7 @@ footer .payment-icons-container .visa-icon img {
   .modal-window-menu .order-item-flex-container2 {
     width: 540px;
     height: 610px;
+    max-height: 80vh;
     left: 620px;
     margin: 0 0 0 0;
   }
@@ -1913,11 +1916,13 @@ footer .payment-icons-container .visa-icon img {
     line-height: 30px;
   }
 }
-
+.modal-window-menu .add-to-shopping-cart {
+  position: relative;
+}
 .modal-window-menu .add-to-shopping-cart button {
   position: absolute;
-  bottom: 36px;
-  right: 108px;
+  bottom: 26px;
+  right: 70px;
   padding: 4px 20px;
   width: 568px;
   height: 77px;
@@ -1936,27 +1941,33 @@ footer .payment-icons-container .visa-icon img {
 }
 @media (max-width: 1919px) {
   .modal-window-menu .add-to-shopping-cart button {
-    right: 36px;
-    bottom: 25px;
+    right: 0px;
+    bottom: 5px;
     width: 546px;
     padding: 0 0 0 0;
   }
 }
 @media (max-width: 1279px) {
+  .modal-window-menu .add-to-shopping-cart {
+    width: 660px;
+    position: static;
+    text-align: center;
+  }
   .modal-window-menu .add-to-shopping-cart button {
     width: 620px;
     height: 65px;
-    left: 30px;
-    bottom: 30px;
+    position: static;
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
+    margin: 10px auto 10px auto;
   }
 }
 @media (max-width: 767px) {
+  .modal-window-menu .add-to-shopping-cart {
+    width: 320px;
+  }
   .modal-window-menu .add-to-shopping-cart button {
-    left: 30px;
-    bottom: 14px;
     width: 264px;
     height: 27px;
     font-weight: 600;
@@ -2553,6 +2564,7 @@ footer .payment-icons-container .visa-icon img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
+  max-height: 98vh;
   overflow-y: scroll;
 }
 @media (max-width: 767px) {
@@ -2603,7 +2615,7 @@ footer .payment-icons-container .visa-icon img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 15px;
   width: 610px;
   height: 152px;
   position: relative;
@@ -2621,9 +2633,6 @@ footer .payment-icons-container .visa-icon img {
   .modal-shopping-cart .main-flex-container-sc img {
     width: 110px;
     height: 125px;
-    position: absolute;
-    left: 90px;
-    top: 50px;
   }
   .modal-shopping-cart .main-flex-container-sc .item-flex-container-sc {
     width: 285px;
@@ -2666,6 +2675,9 @@ footer .payment-icons-container .visa-icon img {
   p {
   display: block;
   height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .modal-shopping-cart
@@ -2727,6 +2739,22 @@ footer .payment-icons-container .visa-icon img {
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
+  }
+  .modal-shopping-cart
+    .main-flex-container-sc
+    .item-flex-container-sc
+    .description-flex-container-sc
+    .addOnList {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal-shopping-cart
+    .main-flex-container-sc
+    .item-flex-container-sc
+    .description-flex-container-sc
+    .addOnList:hover {
+    font-size: 11px;
+    line-height: 14px;
   }
 }
 .modal-shopping-cart .main-flex-container-sc .total-sc {
@@ -2807,12 +2835,18 @@ footer .payment-icons-container .visa-icon img {
 }
 
 .modal-order-form {
-  position: relative;
   width: 700px;
   height: 829px;
   background: #f3ddd4;
   border-radius: 24px;
-  margin: 50px auto 50px auto;
+  margin: 10px auto 10px auto;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  overflow-y: scroll;
 }
 @media (max-width: 767px) {
   .modal-order-form {
@@ -2881,15 +2915,16 @@ footer .payment-icons-container .visa-icon img {
   line-height: 37px;
   padding: 0 0 0 10px;
 }
+input::placeholder,
 textarea::placeholder {
   border-radius: 16px;
   font-family: "Cairo", sans-serif;
   font-style: normal;
-  color: #151212;
+  color: #696767;
   font-weight: 500;
   font-size: 20px;
   line-height: 37px;
-  color: #151212;
+  opacity: 1;
 }
 @media (max-width: 767px) {
   .modal-order-form .order-form .form-row input,
@@ -2945,6 +2980,22 @@ textarea::placeholder {
   }
 }
 
+.modal-order-form .order-form .required-input-mark {
+  color: #ff5722;
+  font-weight: 600;
+  font-size: 25px;
+}
+.modal-order-form .order-form #empty-error {
+  color: #ff5722;
+  font-weight: 500;
+  font-size: 20px;
+}
+.modal-order-form .order-form #correct-error {
+  color: #ff5722;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .modal-order-form .order-form .payment-box {
   box-sizing: border-box;
   width: 660px;
@@ -2955,6 +3006,7 @@ textarea::placeholder {
   font-weight: 500;
   font-size: 20px;
   line-height: 37px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .modal-order-form .order-form .payment-box {
@@ -2972,7 +3024,9 @@ textarea::placeholder {
   padding: 6px auto;
 }
 .modal-order-form .order-form .payment-box input {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: -2;
 }
 .modal-order-form .order-form .payment-box .payment-button {
   display: block;
@@ -2997,6 +3051,9 @@ textarea::placeholder {
 }
 
 .modal-order-form .order-form .payment-box .payment-button:hover {
+  color: #ff5722;
+}
+.modal-order-form .order-form .payment-box input:checked + label {
   color: #ff5722;
 }
 .modal-order-form .order-form .payment-box .form-row {
@@ -3082,6 +3139,29 @@ textarea::placeholder {
   width: 104px;
   height: 27px;
 }
+
+.modal-order-form .order-form #result-payment-0 {
+  background-color: #f3ddd4;
+  border: none;
+}
+.modal-order-form .order-form #result-payment-1 .payment-icons-row {
+  width: 245px;
+}
+.modal-order-form .order-form .result-payment-box input[type="text"] {
+  position: absolute;
+  width: 354px;
+  height: 51px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 2px solid #ff5722;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+  padding: 0 0 0 10px;
+}
+
 .modal-order-form .order-form #order-form-submit {
   width: 322px;
   height: 45px;
