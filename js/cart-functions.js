@@ -1,5 +1,5 @@
 import { showOrderModal } from "./order-modal.js";
-import {products} from "./main.js";
+import {products} from "./data.js";
 
 export function getCartFromSessionStorage() {
   try {

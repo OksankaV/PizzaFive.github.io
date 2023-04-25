@@ -8,7 +8,8 @@ import {
   sauseMakeItem,
 } from "./make-item-page.js";
 
-export const products = JSON.parse(localStorage.getItem("data"));
+import {products} from "./data.js";
+
 
 $(function () {
   //index first-view slick-slider

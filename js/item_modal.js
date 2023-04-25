@@ -2,7 +2,7 @@ import {
   getCartFromSessionStorage,
   changeTotalCountCart,
 } from "./cart-functions.js";
-import { products } from "./main.js";
+import {products} from "./data.js";
 
 export function modalMenuWindow(itemName) {
   let modal = $(".modal-" + itemName);
