@@ -2847,6 +2847,7 @@ footer .payment-icons-container .visa-icon img {
   transform: translateX(-50%);
   z-index: 4;
   overflow-y: scroll;
+  max-height: 98vh;
 }
 @media (max-width: 767px) {
   .modal-order-form {

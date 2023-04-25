@@ -366,7 +366,6 @@ export function modalMenuWindow(itemName) {
     }
 
     function addToShoppingCart(itemId, drinkVolumeIndex = undefined) {
-      //alert(itemId +  + cheeseBorder + addOnItem);
       const addOnItemsArray = $(".add-ons input")
         .filter((_, value) => $(value).is(":checked"))
         .map((_, value) => $(value).attr("value").toLowerCase());
@@ -440,6 +439,8 @@ export function modalMenuWindow(itemName) {
     $(".add-ons li")
       .css("box-shadow", "0px 4px 10px #FF5722")
       .css("color", "#151212");
+    $(".add-ons li img").css("box-shadow", "0px 4px 10px #FF5722")
+    $(".add-ons li label").css("color", "#151212");  
 
     changeTotalCountCart();
   }
