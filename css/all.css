@@ -836,6 +836,9 @@ header .menu-icon-mob a img {
   height: auto;
   margin: 26px 0 113px 0;
 }
+.order-and-payment .order-banner-holder img {
+  width: 100%;
+}
 .order-and-payment .order-banner-holder .mob-banner {
   display: none;
 }
@@ -1363,7 +1366,7 @@ footer .payment-icons-container .visa-icon img {
   margin: 20px auto 0 auto;
   z-index: 4;
   max-height: 98vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .burger-modal-description {
   display: none;
@@ -2565,7 +2568,7 @@ footer .payment-icons-container .visa-icon img {
   transform: translateX(-50%);
   z-index: 4;
   max-height: 98vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 @media (max-width: 767px) {
   .modal-shopping-cart {
@@ -2846,7 +2849,7 @@ footer .payment-icons-container .visa-icon img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 98vh;
 }
 @media (max-width: 767px) {
