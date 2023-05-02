@@ -1,5 +1,5 @@
 import { showOrderModal } from "./order-modal.js";
-import {products} from "./data.js";
+import { products } from "./data.js";
 
 export function getCartFromSessionStorage() {
   try {
@@ -27,7 +27,6 @@ export function openShopCartModal(event) {
   $(".overlay").removeClass("hidden");
   let cart = getCartFromSessionStorage();
   makeCartListHTML();
-  
 
   function makeCartListHTML() {
     if (cart === null || cart.items.length == 0) {
@@ -35,6 +34,7 @@ export function openShopCartModal(event) {
         .html("<h3>Кошик порожній</h3>")
         .append('<img class="empty-cart-img" src="images/empty-cart.png">');
       $(".modal-shopping-cart").css("height", "250px");
+      $(".main-flex-container-sc").css("height", "50px");
     } else {
       $(".main-flex-container-sc").html("");
       let maxHeight = 800;

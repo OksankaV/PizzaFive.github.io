@@ -19,6 +19,7 @@ $(function () {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
+    useTransform: false,
     responsive: [
       {
         breakpoint: 1439,

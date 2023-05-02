@@ -980,6 +980,11 @@ header .menu-icon-mob a img {
   .contacts .social-icon-container .contacts-instagram {
     background-size: 33px 33px;
   }
+  .contacts .social-icon-container .contacts-facebook:hover,
+  .contacts .social-icon-container .contacts-telegram:hover,
+  .contacts .social-icon-container .contacts-instagram:hover {
+    background-size: 33px 33px;
+  }
 }
 
 footer {
@@ -1264,6 +1269,7 @@ footer .payment-icons-container .visa-icon img {
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
+  cursor: pointer;
   -webkit-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -moz-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -ms-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
@@ -1936,6 +1942,7 @@ footer .payment-icons-container .visa-icon img {
   font-weight: 600;
   font-size: 24px;
   line-height: 45px;
+  cursor: pointer;
   -webkit-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -moz-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -ms-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
@@ -2057,6 +2064,7 @@ footer .payment-icons-container .visa-icon img {
   border: 1px solid #ff5722;
   box-shadow: 0px 4px 10px #ff5722;
   border-radius: 16px;
+  cursor: pointer;
   -webkit-transition: box-shadow 500ms ease-in-out;
   -moz-transition: box-shadow 500ms ease-in-out;
   -ms-transition: box-shadow 500ms ease-in-out;
@@ -2188,6 +2196,7 @@ footer .payment-icons-container .visa-icon img {
   font-weight: 600;
   font-size: 24px;
   line-height: 45px;
+  cursor: pointer;
   -webkit-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -moz-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -ms-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
@@ -2251,7 +2260,7 @@ footer .payment-icons-container .visa-icon img {
     height: 387px;
   }
   .modal-sause .order-item-flex-container {
-    height: 350px;
+    height: 300px;
   }
   .modal-window-menu .sause-modal-flex-container {
     position: absolute;
@@ -2412,7 +2421,7 @@ footer .payment-icons-container .visa-icon img {
     .confirmation-flex-container-top
     h4 {
     font-weight: 900;
-    font-size: 30px;
+    font-size: 27px;
     line-height: 60px;
   }
   .order-confirmation
@@ -2794,6 +2803,7 @@ footer .payment-icons-container .visa-icon img {
 }
 .modal-shopping-cart .main-flex-container-sc .make-order-button {
   align-self: center;
+  cursor: pointer;
 }
 .modal-shopping-cart .main-flex-container-sc .make-order-button button {
   width: 590px;
@@ -2806,6 +2816,7 @@ footer .payment-icons-container .visa-icon img {
   font-size: 24px;
   line-height: 24px;
   padding: 3px 20px;
+  cursor: pointer;
   -webkit-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -moz-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
   -ms-transition: color 500ms ease-in-out, box-shadow 500ms ease-in-out;
@@ -2941,6 +2952,10 @@ textarea::placeholder {
     line-height: 26px;
     padding: 0 0 0 5px;
   }
+  .modal-order-form .order-form .form-row input::placeholder,
+  .modal-order-form .order-form .form-row textarea::placeholder {
+    font-size: 14px;
+  }
 }
 .modal-order-form .order-form .form-row #input-name {
   width: 149px;
@@ -3042,6 +3057,7 @@ textarea::placeholder {
   border-radius: 8px;
   text-align: center;
   line-height: 47px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .modal-order-form .order-form .payment-box .payment-button {
@@ -3084,6 +3100,7 @@ textarea::placeholder {
   border-radius: 8px;
   text-align: center;
   line-height: 47px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .modal-order-form .order-form .result-payment-box {
@@ -3164,6 +3181,11 @@ textarea::placeholder {
   font-size: 20px;
   line-height: 37px;
   padding: 0 0 0 10px;
+}
+@media (max-width: 767px) {
+  .modal-order-form .order-form .result-payment-box input[type="text"] {
+    width: 265px;
+  }
 }
 
 .modal-order-form .order-form #order-form-submit {
